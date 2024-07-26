@@ -1,8 +1,8 @@
 using System.Text;
-using ExpressionBuilder.Enums;
-using ExpressionBuilder.Models;
+using RuleExpressionBuilder.Enums;
+using RuleExpressionBuilder.Models;
 
-namespace ExpressionBuilder.Services;
+namespace RuleExpressionBuilder.Services;
 
 public class RuleParser : IRuleParser
 {

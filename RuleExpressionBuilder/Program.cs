@@ -1,13 +1,13 @@
-﻿using ExpressionBuilder.Enums;
-using ExpressionBuilder.Models;
-using ExpressionBuilder.Services;
+﻿using RuleExpressionBuilder.Enums;
+using RuleExpressionBuilder.Models;
+using RuleExpressionBuilder.Services;
 
 var list = new List<RuleEntity>()
 {
     new RuleEntity()
     {
-        Clauses = new[]
-        {
+        Clauses =
+        [
             new RuleClause
             {
                 LogicalOperator = LogicalOperatorType.And,
@@ -64,7 +64,7 @@ var list = new List<RuleEntity>()
                 Value = "50",
                 Index = 7
             }
-        },
+        ],
         ClauseGroups = new[]
         {
             new RuleClauseGroup

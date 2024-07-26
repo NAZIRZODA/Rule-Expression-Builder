@@ -1,6 +1,6 @@
-using ExpressionBuilder.Models;
+using RuleExpressionBuilder.Models;
 
-namespace ExpressionBuilder.Services;
+namespace RuleExpressionBuilder.Services;
 
 public interface IRuleParser
 {

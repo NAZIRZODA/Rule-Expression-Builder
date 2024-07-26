@@ -1,6 +1,6 @@
-using ExpressionBuilder.Enums;
+using RuleExpressionBuilder.Enums;
 
-namespace ExpressionBuilder.Models;
+namespace RuleExpressionBuilder.Models;
 
 public class RuleClause
 {

@@ -1,4 +1,4 @@
-namespace ExpressionBuilder.Enums;
+namespace RuleExpressionBuilder.Enums;
 
 public enum OperatorType
 {
