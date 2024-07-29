@@ -6,13 +6,14 @@ var list = new List<RuleEntity>()
 {
     new RuleEntity()
     {
+        TargetDoamainType = "Order",
         Clauses =
         [
             new RuleClause
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "BusinessUnitId",
-                Operator = OperatorType.Equals,
+                Operator = OperatorType.Equal,
                 Value = "SpecificBUId",
                 Index = 1
             },
@@ -20,7 +21,7 @@ var list = new List<RuleEntity>()
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "OrderStatus",
-                Operator = OperatorType.Equals,
+                Operator = OperatorType.Equal,
                 Value = "7",
                 Index = 2
             },
@@ -28,7 +29,7 @@ var list = new List<RuleEntity>()
             {
                 LogicalOperator = LogicalOperatorType.Or,
                 FieldName = "OrderStatus",
-                Operator = OperatorType.Equals,
+                Operator = OperatorType.Equal,
                 Value = "8",
                 Index = 3
             },
@@ -36,7 +37,7 @@ var list = new List<RuleEntity>()
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "IsActive",
-                Operator = OperatorType.Equals,
+                Operator = OperatorType.Equal,
                 Value = "true",
                 Index = 4
             },
@@ -89,13 +90,14 @@ var list = new List<RuleEntity>()
     },
     new RuleEntity()
     {
+        TargetDoamainType = "User",
         Clauses = new[]
         {
             new RuleClause
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "Country",
-                Operator = OperatorType.Equals,
+                Operator = OperatorType.Equal,
                 Value = "USA",
                 Index = 1
             },
@@ -119,7 +121,7 @@ var list = new List<RuleEntity>()
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "SubscriptionStatus",
-                Operator = OperatorType.Equals,
+                Operator = OperatorType.Equal,
                 Value = "active",
                 Index = 4
             },
@@ -127,7 +129,7 @@ var list = new List<RuleEntity>()
             {
                 LogicalOperator = LogicalOperatorType.Or,
                 FieldName = "SubscriptionStatus",
-                Operator = OperatorType.Equals,
+                Operator = OperatorType.Equal,
                 Value = "pending",
                 Index = 5
             },
@@ -164,14 +166,15 @@ var list = new List<RuleEntity>()
     },
     new RuleEntity
     {
+        TargetDoamainType = "OrderLine",
         Clauses = new[]
         {
             new RuleClause
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "ProductCategory",
-                Operator = OperatorType.Equals,
-                Value = "'Electronics'",
+                Operator = OperatorType.Equal,
+                Value = "Electronics",
                 Index = 1
             },
             new RuleClause
@@ -194,16 +197,16 @@ var list = new List<RuleEntity>()
             {
                 LogicalOperator = LogicalOperatorType.Or,
                 FieldName = "Brand",
-                Operator = OperatorType.Equals,
-                Value = "'Sony'",
+                Operator = OperatorType.Equal,
+                Value = "Sony",
                 Index = 4
             },
             new RuleClause
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "Brand",
-                Operator = OperatorType.Equals,
-                Value = "'Samsung'",
+                Operator = OperatorType.Equal,
+                Value = "Samsung",
                 Index = 5
             },
             new RuleClause
@@ -239,14 +242,15 @@ var list = new List<RuleEntity>()
     },
     new RuleEntity
     {
+        TargetDoamainType = "Worker",
         Clauses = new[]
         {
             new RuleClause
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "Department",
-                Operator = OperatorType.Equals,
-                Value = "'HR'",
+                Operator = OperatorType.Equal,
+                Value = "HR",
                 Index = 1
             },
             new RuleClause
@@ -269,16 +273,16 @@ var list = new List<RuleEntity>()
             {
                 LogicalOperator = LogicalOperatorType.Or,
                 FieldName = "Location",
-                Operator = OperatorType.Equals,
-                Value = "'New York'",
+                Operator = OperatorType.Equal,
+                Value = "New York",
                 Index = 4
             },
             new RuleClause
             {
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "Location",
-                Operator = OperatorType.Equals,
-                Value = "'San Francisco'",
+                Operator = OperatorType.Equal,
+                Value = "San Francisco",
                 Index = 5
             },
             new RuleClause
@@ -286,7 +290,7 @@ var list = new List<RuleEntity>()
                 LogicalOperator = LogicalOperatorType.And,
                 FieldName = "EmploymentDate",
                 Operator = OperatorType.Contains,
-                Value = "'2022-01-01'",
+                Value = "2022-01-01",
                 Index = 6
             }
         },
